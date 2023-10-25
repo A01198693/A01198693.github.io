@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Clase de Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Fotos/logo.png" class="loho" />
+          <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <img
+              src="Fotos/x.png"
+              class="x-logo"
+              onclick="closeMenu()"
+              alt=""
+            />
+          </ul>
+          <img
+            src="Fotos/barra-menu.png"
+            class="menu-logo"
+            onclick="openMenu()"
+            alt=""
+          />
+        </nav>
+
+        <div class="header-text">
+          <p>Second Year Computer Science Student</p>
+          <h1>
+            Hi, I'm <span> Isaac</span> <br />
+            From Mexico
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- Sección de About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Fotos/user.png" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Im Isaac Rojas Sosa, a second year Computer Science student at the
+              Monterrey Institute of Technology and Higher Education. I am
+              passionate about technology and its applications in the real
+              world. I am currently looking for an internship to gain experience
+              in the field of software development. I enjoy working in teams and
+              learning new things. I like Web Development, Game Development and
+              Software Development
+            </p>
+            <!-- Tab titles -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />JavaScript, C++,
+                  Python, Matlab, C#
+                </li>
+                <li>
+                  <span>Technologies</span><br />
+                  HTML , CSS, Unity, Github, Visual Studio Code
+                </li>
+                <li>
+                  <span>Languages</span><br />Spanish (Native) English (C1)
+                </li>
+              </ul>
+            </div>
+            <!-- Experiences -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Hackathon MTY 2023</span><br />
+                  Co created a web application to reduce food waste in their
+                  homes. And ranked amongst the top 10 teams out of 100.
+                </li>
+                <li>
+                  <span>GameJam 2023</span><br />Soon to participate in a
+                  gamejam (nov 3)
+                </li>
+                <li>
+                  <span>Hackathon Digital Transformation 2023</span><br />Soon
+                  to participate (Oct 25)
+                </li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.S in Computer Science and Technology</span
+                  ><br />Persuing a Bachelors Degree in CS at Monterrey
+                  Institute of Technology and Higher Education <br />
+                  Expected Graduation June 2026
+                </li>
+                <li>
+                  <span>Web Development Fundamentals </span><br />
+                  Currently taking IBM skillbuilds course on Web Development
+                  Fundamentals
+                </li>
+
+                <!--   <li><span>Habilidad 3</span><br />Descripción</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sección de Contacto -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <img src="Fotos/Mail.png" class="logos" alt="" />
+              isaacrs481@gmail.com
+            </p>
+            <p>
+              <img src="Fotos/cel.png" class="logos" alt="" /> +52 55 8034 8793
+            </p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/isaacrs_481/" target="_blank"
+                ><img src="Fotos/instagram.png" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/isaac-rojas-sosa-958043294/"
+                target="_blank"
+                ><img src="Fotos/linkedin.png" alt=""
+              /></a>
+              <a href="https://github.com/A01198693" target="_blank"
+                ><img src="Fotos/github.png" alt=""
+              /></a>
+            </div>
+            <a href="Fotos/cv.jpeg" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                requiredd
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sidemenu.style.right = "-250px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyF_GSIfyh3uiogf83Bcba5d7XAM6hCsSKlXw9aPGZL1frQiCBXvqGAaSe5GVJI2GYJ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => {
+            msg.innerHTML = "Message Failed to Send";
+          });
+      });
+    </script>
+  </body>
+</html>
