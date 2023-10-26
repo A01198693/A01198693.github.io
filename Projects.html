@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Clase de Header -->
+    <div id="header2">
+      <div class="container">
+        <nav>
+          <img src="Fotos/logo.png" class="loho" />
+          <ul id="sidemenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#projectos">PROJECTS</a></li>
+            <li><a href="#projectos-escolares">MAJOR SCHOOL PROJECTS</a></li>
+            <li><a href="#projectos-futuros">FUTURE PROJECTS</a></li>
+            <img
+              src="Fotos/x.png"
+              class="x-logo"
+              onclick="closeMenu()"
+              alt=""
+            />
+          </ul>
+          <img
+            src="Fotos/barra-menu.png"
+            class="menu-logo"
+            onclick="openMenu()"
+            alt=""
+          />
+        </nav>
+
+        <div class="header-text text2">
+          <h1>
+            In this section you will find my <span> Projects</span> <br />
+          </h1>
+
+          <p>
+            Including Personal Projects, School Projects and Future Projects.
+            Some of them are still in development, I plan on adding more
+            projects in the future. <br />
+          </p>
+
+          <h2>
+            I will focus on <br />
+            <span>Web Development, Game Dev and Mobile Dev.</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clase de Projectos -->
+
+    <div id="projectos">
+      <div class="container">
+        <!-- Projectos Personales  -->
+        <h1 class="sub-title">Projects</h1>
+        <div class="line"></div>
+        <div class="row2">
+          <div class="foto">
+            <img src="Fotos/Optifood.png" class="projecto-foto2" alt="" />
+          </div>
+          <div class="descripcion">
+            <h1>Optifood</h1>
+
+            <div class="line2"></div>
+
+            <p>
+              Co-Created a Web Application that allows its user to find recipes
+              based on the ingredients they have in their pantry. With OptiFood,
+              users can register their pantry, and with a system powered by
+              Artificial Inteligence, they can generate recipes giving priority
+              to those that use their soon-to-expire foods, while also reminding
+              them of set dates in order to avoid food waste. The application
+              was created using html, css , javascript, python and OpenAI API.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clase de Projectos Escolares -->
+
+    <div id="projectos-escolares">
+      <div class="container">
+        <h1 class="sub-title">Major School Projects</h1>
+        <div class="line"></div>
+
+        <!-- Estacionamiento C++ -->
+
+        <div class="row2">
+          <div class="foto">
+            <img src="Fotos/parking-lot.png" class="projecto-foto2" alt="" />
+          </div>
+          <div class="descripcion">
+            <h1><span>C++ </span> Parking Lot Management System 🚘</h1>
+
+            <div class="line2"></div>
+
+            <p>
+              Developed a C++ program for a parking lot management system that
+              efficiently manages parking cards for employees, suppliers, and
+              customers. The system reads information from a text file, applying
+              Object-Oriented Programming (OOP) concepts such as inheritance,
+              polymorphism, and operator overloading. It provides a robust
+              solution for tracking parking card data, registering car arrivals,
+              calculating hours to pay, and determining parking fees based on
+              card types and arrival/exit times.
+            </p>
+          </div>
+        </div>
+
+        <!-- Simulador Volcan  -->
+        <div class="row2">
+          <div class="foto">
+            <img
+              src="Fotos/Simulador-Volcan.png"
+              class="projecto-foto2"
+              alt=""
+            />
+          </div>
+          <div class="descripcion">
+            <h1>Volcanic Eruption Simulator in <span>MATLAB </span> 🌋</h1>
+
+            <div class="line2"></div>
+
+            <p>
+              Designed an application in MATLAB to simulate volcanic eruptions
+              and projectiles launched by a volcano. We used the Euler method
+              and various MATLAB functions, such as 'for' loops and 'if'
+              conditionals, to calculate the trajectory of the projectiles and
+              limit user inputs. The App Designer tool facilitated the creation
+              of the interface. Our simulation provides an accurate
+              representation of volcanic eruptions and the behavior of
+              projectiles in different scenarios.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quiz Python -->
+
+        <div class="row2">
+          <div class="foto">
+            <img
+              src="Fotos/python-basics-quiz.jpg"
+              class="projecto-foto2"
+              alt=""
+            />
+          </div>
+          <div class="descripcion">
+            <h1><span>Python </span> Basics Quiz on Terminal</h1>
+
+            <div class="line2"></div>
+
+            <p>
+              Developed a terminal-based Python quiz application to help
+              students grasp fundamental Python concepts. The quiz includes
+              True/False, Multiple Choice, and Coding questions, offering
+              feedback on the number of correct answers at the end. The "result"
+              function provides performance feedback based on the score, and the
+              application visually tracks correct and incorrect answers with "✓"
+              and "x." This project aims to make Python learning interactive and
+              engaging for students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clase de Futuros Projectos -->
+
+    <div id="projectos-futuros">
+      <div class="container">
+        <!-- Projectos Personales  -->
+        <h1 class="sub-title">Future Projects</h1>
+        <div class="line"></div>
+
+        <!-- Pharaohs Curse -->
+
+        <div class="row2">
+          <div class="foto">
+            <img src="Fotos/AnubisAnima.gif" class="projecto-foto3" alt="" />
+          </div>
+          <div class="descripcion">
+            <h1>Pharaohs Curse 🪬</h1>
+
+            <div class="line2"></div>
+
+            <p>
+              Developing a 2D horror game in Unity with a team of 7 people, the
+              game is about a group of archaeologists who are exploring an
+              Egyptian pyramid. They find a cursed artifact that unleashes
+              several creatures that chases them throughout the pyramid. The
+              player must escape the pyramid while avoiding traps and solving
+              puzzles, the game will be available for PC.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closeMenu() {
+        sidemenu.style.right = "-250px";
+      }
+    </script>
+  </body>
+</html>
