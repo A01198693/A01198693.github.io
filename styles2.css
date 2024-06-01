@@ -291,6 +291,18 @@
     margin-bottom: 1rem;
   }
 
+  .PopUp p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .PopUp a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #CBACF9;
+
+  }
+
   body{
     background-color: #000319;
     display: flex;
@@ -311,4 +323,15 @@
         
         text-align: center;
    }
+
+    .PopUp p{
+          font-size: 1.5rem;
+          text-align: center;
+      }
+  
+      .PopUp a{
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: #CBACF9;
+      }
 }
